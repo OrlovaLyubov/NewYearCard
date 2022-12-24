@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="New_Year_Card" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lN4-YA-ojF">
+                                <rect key="frame" x="20" y="81" width="374" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="nhK-da-a3b"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="uGJ-Hu-Ad6"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                </segments>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="—Pngtree—cute cartoon santa claus commercial_4043032" translatesAutoresizingMaskIntoConstraints="NO" id="9de-d4-Zeg">
+                                <rect key="frame" x="20" y="169" width="374" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="185" id="Oc3-Zw-jvb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="TJW-Cc-xKN"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Кое-кто мне рассказал, что в уходящем году ты себя вёл хорошо. Поэтому я к тебе пришел с поздравлениями и подарками!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="01z-bD-Qod">
+                                <rect key="frame" x="20" y="434" width="374" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="2gl-hw-xOO"/>
+                                    <constraint firstAttribute="height" constant="157" id="qo8-Ki-QCP"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDu-8d-tzW">
+                                <rect key="frame" x="20" y="784" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2SV-ku-mJs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="ESf-xg-hDh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Получить поздравление" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lN4-YA-ojF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2qS-fa-a8G"/>
+                            <constraint firstItem="NDu-8d-tzW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NbB-P9-JFj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NDu-8d-tzW" secondAttribute="bottom" constant="30" id="XTG-8I-kZj"/>
+                            <constraint firstItem="9de-d4-Zeg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ygl-sn-uCy"/>
+                            <constraint firstItem="01z-bD-Qod" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZTz-B3-AE1"/>
+                            <constraint firstItem="lN4-YA-ojF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="fFV-K6-svL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lN4-YA-ojF" secondAttribute="trailing" constant="20" id="gu7-tg-gRQ"/>
+                            <constraint firstItem="01z-bD-Qod" firstAttribute="top" secondItem="9de-d4-Zeg" secondAttribute="bottom" constant="80" id="jK5-5Y-yUZ"/>
+                            <constraint firstItem="9de-d4-Zeg" firstAttribute="top" secondItem="lN4-YA-ojF" secondAttribute="bottom" constant="57" id="kae-Ds-GTN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9de-d4-Zeg" secondAttribute="trailing" constant="20" id="nja-Ob-wqN"/>
+                            <constraint firstItem="9de-d4-Zeg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p2h-7T-qng"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NDu-8d-tzW" secondAttribute="trailing" constant="20" id="pD8-kL-Fwu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="01z-bD-Qod" secondAttribute="trailing" constant="20" id="zMo-7O-9JE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="NDu-8d-tzW" id="H2B-Ls-97U"/>
+                        <outlet property="mainLabel" destination="01z-bD-Qod" id="7sp-HA-h4b"/>
+                        <outlet property="segmentControl" destination="lN4-YA-ojF" id="edi-YS-gt7"/>
+                        <outlet property="textField" destination="01z-bD-Qod" id="V4x-3w-aL0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24.637681159420293" y="32.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="—Pngtree—cute cartoon santa claus commercial_4043032" width="2000" height="2000"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
